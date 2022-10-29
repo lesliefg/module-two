@@ -11,8 +11,8 @@ A live portfolio website to display my work, experience and provide a way for fu
 
 ## Usage
 
-Live webpage link provided [tba]
-Github repo link [https://github.com/lesliefg/module-two]
+- Live webpage link provided [tba]
+- Github repo link [https://github.com/lesliefg/module-two]
 
 - Use as a place to explore my past work with different functions as well as see any current projects I'm working on and future project ideas.
 - Use as a way to contact me for work, questions or anything else.
@@ -20,8 +20,8 @@ Github repo link [https://github.com/lesliefg/module-two]
 
 ## Credits
 
-Reset code provided by <i>Eric A. Meyer.</i> Link to provided code and licensing: [https://meyerweb.com/eric/tools/css/reset/] 
-HTML and CSS code written by Leslie Garcia (me) github: [https://github.com/lesliefg]
+- Reset code provided by <i>Eric A. Meyer.</i> Link to provided code and licensing: [https://meyerweb.com/eric/tools/css/reset/] 
+- HTML and CSS code written by Leslie Garcia (me) github: [https://github.com/lesliefg]
 
 ## License
 
