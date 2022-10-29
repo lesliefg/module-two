@@ -20,7 +20,7 @@ Github repo link [https://github.com/lesliefg/module-two]
 
 ## Credits
 
-Reset code provided by: 
+Reset code provided by <i>Eric A. Meyer.</i> Link to provided code and licensing: [https://meyerweb.com/eric/tools/css/reset/] 
 HTML and CSS code written by Leslie Garcia (me) github: [https://github.com/lesliefg]
 
 ## License
