@@ -23,6 +23,7 @@ A live portfolio website to display my work, experience and provide a way for fu
 - Reset code provided by <i>Eric A. Meyer.</i> Link to provided code and licensing: [https://meyerweb.com/eric/tools/css/reset/] 
 - Sidebar tutorial created by Jamie Juviler: [https://blog.hubspot.com/website/author/jamie-juviler]
 - HTML and CSS code written by Leslie Garcia (me) github: [https://github.com/lesliefg]
+- Photo credits, all by TaylerTailors on instagram (me): [https://www.instagram.com/taylertailors/?hl=en]
 
 ## License
 
