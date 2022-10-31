@@ -65,7 +65,7 @@ a {
 .header nav ul li a:hover {
     display: inline-block;
     background-color: var(--dark);
-    color: var(--pink);
+    color: var(--light);
 }
 
 .sidebar {
@@ -239,7 +239,24 @@ footer h4 {
     font-size: 20px; 
 }
 
+/*large screen desktops*/
+@media screen and (max-width: 1200px) {
+
+}
+
+/*small screen laptops*/
+@media screen and (max-width: 992px) {
+
+}
+
+/*Ipads and tablets*/
 @media screen and (max-width: 768px) {
-    header,, footer, #container {
-      flex-direction: column;
-    }
+    header {
+        flex-direction: column;
+      }
+}
+
+/*Mobile devices*/
+@media screen and (max-width: 480px) {
+
+} 
