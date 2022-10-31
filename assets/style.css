@@ -1,7 +1,9 @@
+
 :root {
-    --pink: #D1B1CB;
-    --light: #DDCAD9;
-    --dark: #7C616C;
+    --background: #3A8999;
+    --light: #C3EDE5;
+    --borders: #40BAC9;
+    --dark: #46235c;
     --main-text: #000;
 }
 * {
@@ -14,7 +16,7 @@ body {
     font-size: 16px; 
     font-family: 'Cascadia Code';
     color: var(--main-text);
-    background-color: #E5E9EC;
+    background-color: #304153;
 }
 
 .header {
@@ -24,9 +26,9 @@ body {
     left: 0px;
     width: 100%;
     padding: 20px;
-    background-color: var(--pink);
+    background-color: var(--background);
     color: var(--main-text);
-    border-bottom: 3px solid var(--dark);
+    border-bottom: 3px solid var(--borders);
 }
 
 
@@ -56,7 +58,7 @@ body {
 }
 
 a {
-    color: var(--main-text);
+    color: var(--main-tex);
     text-decoration: none;
 }
 
@@ -66,71 +68,29 @@ a {
     color: var(--pink);
 }
 
-.sidebar1 {
-    height: 375px;
-    width: 300px;
-    position: fixed;
-    top: 105px;
-    left: 100px;
-    padding-top: 40px;
-    background-color: var(--pink);
-    border: 5px solid var(--dark);
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 500px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: var(--dark); 
+    border-right: 4px solid var(--borders);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 125px;
     text-align: center;
+    vertical-align: middle;
+  }
+  
+.sidebar h2 {
+    font-size: 40px;
+    color: var(--background);
 }
 
-.sidebar2 {
-    height: 350px;
-    width: 300px;
-    position: fixed;
-    top: 490px;
-    left: 100px;
-    padding-top: 40px;
-    background-color: var(--pink);
-    border: 5px solid var(--dark);
-    text-align: center;
-}
-
-.sidebar3 {
-    height: 375px;
-    width: 300px;
-    position: fixed;
-    top: 105px;
-    left: 1500px;
-    padding-top: 40px;
-    background-color: var(--pink);
-    border: 5px solid var(--dark);
-    text-align: center;
-}
-
-.sidebar4 {
-    height: 350px;
-    width: 300px;
-    position: fixed;
-    top: 490px;
-    left: 1500px;
-    padding-top: 40px;
-    background-color: var(--pink);
-    border: 5px solid var(--dark);
-    text-align: center;
-}
-
-#sidebar-img {
-    align-items: center;
-    max-width: 250px;
-    max-height: 250px;
-}
-
-#sidebar-title1 {
-    color: var(--dark);
-    display: block;
-    text-align: center;
-    border-top: 5px solid var(--dark)
-}
-
-#sidebar-title {
-    color: var(--dark);
-    display: block;
-    text-align: center;
+.sidebar p {
+    font-size: 20px;
+    color: var(--light);
 }
 
 .container {
@@ -139,15 +99,15 @@ a {
     justify-content: center;
     text-align: center;
     margin-top: 150px;
-    margin-left: 500px;
+    margin-left: 550px;
 }
 
 .container section {
     display: block;
-    border: 5px solid var(--dark);
-    width: 900px;
-    height: 200px;
-    margin: 30px;
+    border: 5px solid var(--borders);
+    width: 90%;
+    height: 300px;
+    margin: 40px;
     text-align: center;
     background-color: var(--light);
 }
@@ -158,18 +118,39 @@ a {
     width: 90%;
     margin-left: 38px;
     border-style: solid;
-    border-color: var(--dark);
+    border-color: var(--borders);
     padding: 5px;
     border-radius: 10px;
     font-size: 150%;
     font-weight: bolder;
-    color: var(--pink);
+    color: var(--light);
     background-color: var(--dark);
     text-align: center;
 }
 
 .section #desc {
+    font-size: 20px;
     display: none;
+}
+
+#html {
+    background-image: url(./images/html.cropped.jpg);
+}
+
+#css {
+    background-image: url(./images/css.cropped.jpg);
+}
+
+#javascript {
+    background-image: url(./images/javascript.cropped.jpg);
+}
+
+#node {
+    background-image: url(./images/node.cropped.jpg);
+}
+
+#mern {
+    background-image: url(./images/mern.cropped.jpg);
 }
 
 .section, .section #title {
@@ -192,81 +173,56 @@ rgba(232, 102, 236, 1);
     display: block;
     text-align: center;
     transition: all 2s ease-in-out;
-}
-
-.box #wips {
-    border: 5px solid var(--dark);
     color: var(--dark);
-}
-
-footer {
-    display: block;
-    clear: both;
-    width: 100%;
-    bottom: 0;
-    padding: 30px;
-    text-align: center;
-    color: var(--main-text);
-    background-color: var(--pink);
-    border-top: 3px solid var(--dark);
-    position: relative;
-}
-
-footer h4 {
-    font-size: 20px; 
-}
-
-/*
-
-
-.boxes {
-    margin: 30px;
-}
-
-.boxes section {
-    border: 3px solid var(--dark);
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
-    content: center;
-}
-
-.boxes section ul li {
-    list-style: none;
-}
-
-.container section {
-    width: 500px;
-    min-height: 100px;
-    max-height: 600px;
-    margin: 30px;
-    border: 3px dashed var(--light);
-    background-color: transparent;
-}
-
-.container {
-    display: block;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-}
-
-.container section {
-    width: 700px;
-    height: 150px;
-    margin: 30px;
-    border: 4px solid var(--dark);
     background-color: var(--light);
 }
 
-#desc {
-    padding-top: 50px;
-    padding-left: 5px;
-    color: var(--main-text);
+#contact-title {
+    position: relative;
+    top: -30px;
+    width: 100.9%;
+    margin-left: -5px;
+    border-style: solid;
+    border-color: var(--borders);
+    padding: 5px;
+    font-size: 150%;
+    font-weight: bolder;
+    color: var(--light);
+    background-color: var(--dark);
+    text-align: center;
+}
+
+#contact-img {
+    display: inline-block;
+    border: 5px solid var(--borders);
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    bottom: 22px;
+    left: -250px;
+}
+
+#contact {
+    display: inline-block;
+    font-size: 20px;
     text-align: left;
+    position: relative;
+    bottom: 130px;
+    left: -250px;
+}
+
+.contact section {
+    display: inline-block;
+    border: 5px solid var(--borders);
+    width: 900px;
+    height: 300px;
+    margin: 30px;
+    text-align: center;
+    background-color: var(--light);
 }
 
 footer {
+    z-index: 1000;
     display: block;
     clear: both;
     width: 100%;
@@ -274,11 +230,16 @@ footer {
     padding: 30px;
     text-align: center;
     color: var(--main-text);
-    background-color: var(--pink);
+    background-color: var(--background);
+    border-top: 3px solid var(--borders);
     position: relative;
-    margin-bottom: 0px;
 }
 
 footer h4 {
     font-size: 20px; 
 }
+
+@media screen and (max-width: 768px) {
+    header,, footer, #container {
+      flex-direction: column;
+    }
