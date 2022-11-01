@@ -34,14 +34,14 @@ body {
 
 .header h1 {
     display: inline-block;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--main-text)
 }
 
@@ -69,18 +69,18 @@ a {
 }
 
 .sidebar {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 500px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 400px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
     background-color: var(--dark); 
     border-right: 4px solid var(--borders);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 125px;
+    overflow-x: hidden; 
+    padding-top: 110px;
+    max-height: auto;
     text-align: center;
-    vertical-align: middle;
   }
   
 .sidebar h2 {
@@ -89,8 +89,12 @@ a {
 }
 
 .sidebar p {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--light);
+    max-height: 360px;
+    margin: 0px 20px 0px 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container {
@@ -99,14 +103,15 @@ a {
     justify-content: center;
     text-align: center;
     margin-top: 150px;
-    margin-left: 550px;
+    margin-left: 390px;
 }
 
 .container section {
     display: block;
     border: 5px solid var(--borders);
     width: 90%;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     margin: 40px;
     text-align: center;
     background-color: var(--light);
@@ -131,6 +136,37 @@ a {
 .section #desc {
     font-size: 20px;
     display: none;
+}
+
+.section #desc a {
+    color: #a149d8;
+}
+
+.section #desc a:hover {
+    color: #15a04a;
+}
+.section .section #title {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+}
+
+.section:hover, .section:hover #title {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+} 
+    
+.box ul:hover {
+    background: rgb(138, 196, 138);
+    transition: all 1s ease-in-out;
+}
+    
+.section:hover #desc {
+    display: block;
+    text-align: center;
+    transition: all 2s ease-in-out;
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 #html {
@@ -158,25 +194,6 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
-.section:hover, .section #title:hover {
-box-shadow: inset 0px 0px 8px
-rgba(232, 102, 236, 1), 0 0 15px
-rgba(232, 102, 236, 1);
-}
-
-.box ul:hover {
-    background: rgb(138, 196, 138);
-    transition: all 1s ease-in-out;
-  }
-
-.section:hover #desc {
-    display: block;
-    text-align: center;
-    transition: all 2s ease-in-out;
-    color: var(--dark);
-    background-color: var(--light);
-}
-
 #contact-title {
     position: relative;
     top: -30px;
@@ -199,26 +216,61 @@ rgba(232, 102, 236, 1);
     max-height: 250px;
     position: relative;
     bottom: 22px;
-    left: -250px;
+    left: auto;
 }
 
 #contact {
     display: inline-block;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
+    vertical-align: top;
     position: relative;
-    bottom: 130px;
-    left: -250px;
+    left: auto;
 }
 
-.contact section {
-    display: inline-block;
+#hidden-about {
+    display: none;
     border: 5px solid var(--borders);
-    width: 900px;
-    height: 300px;
-    margin: 30px;
+    width: 90%;
+    height: auto;
+    margin: 40px;
     text-align: center;
     background-color: var(--light);
+}
+
+
+#hidden-title {
+    position: relative;
+    top: -30px;
+    width: 102%;
+    margin-left: -5px;
+    border-style: solid;
+    border-color: var(--borders);
+    padding: 5px;
+    font-size: 150%;
+    font-weight: bolder;
+    color: var(--light);
+    background-color: var(--dark);
+    text-align: center;
+}
+
+#hidden-img {
+    display: inline-block;
+    border: 5px solid var(--borders);
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    bottom: 22px;
+    left: auto;
+}
+
+#hidden-bio {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: auto;
+    padding: 10px;
 }
 
 footer {
@@ -227,7 +279,7 @@ footer {
     clear: both;
     width: 100%;
     bottom: 0;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     color: var(--main-text);
     background-color: var(--background);
@@ -239,24 +291,140 @@ footer h4 {
     font-size: 20px; 
 }
 
-/*large screen desktops*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+    .header h1 {
+        font-size: 35px;
+    }
+    .header li {
+        font-size: 20px;
+    }
+    .container {
+        margin-left: 450px;
+    }
 
+    .sidebar {
+        width: 450px;
+    }
+
+    .sidebar h2 {
+        font-size: 30px;
+    }
+    .sidebar p {
+        font-size: 14px;
+        max-height: 200px;
+        max-width: 400px;
+        margin-left: 16px;
+        border: 3px dashed var(--background);
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 1079px) { 
+    .container section:nth-child(6) {
+        height: auto;
+    }
 }
 
 /*small screen laptops*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 980px) {
+    .container {
+        margin-left: 300px;
+    }
 
+    #sidebar-img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .sidebar h2 {
+        font-size: 30px;
+    }
+
+    .sidebar p {
+        font-size: 14px;
+        max-height: 160px;
+        max-width: 270px;
+        margin-left: 12px;
+        border: 3px dashed var(--background);
+    }
 }
 
 /*Ipads and tablets*/
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-      }
+@media screen and (max-width: 753px) {
+    .header h1 {
+        text-align: center;
+        display: block;
+    }
+    .container {
+        margin-top: 200px;
+        margin-left: 0px;
+    }
+
+    .container section {
+        margin-left: 15px;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    #hidden-about {
+        display: block;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 655px) {
+    #contact {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 130px;
+    left: auto;
+    }   
+
+    .section:hover #contact {
+    display: block;
+    text-align: center;
+    transition: all 2s ease-in-out;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 3px solid var(--borders);
+    }
+
+    #html {
+        background-image: url(./images/html.square.jpg);
+    }
+    
+    #css {
+        background-image: url(./images/css.square.jpg);
+    }
+    
+    #javascript {
+        background-image: url(./images/javascript.square.jpg);
+    }
+    
+    #node {
+        background-image: url(./images/node.square.jpg);
+    }
+    
+    #mern {
+        background-image: url(./images/mern.square.jpg);
+    }
 }
 
 /*Mobile devices*/
 @media screen and (max-width: 480px) {
+    .container section {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
 
+    #hidden-about {
+        margin-left: 15px;
+    }
 } 
