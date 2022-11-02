@@ -84,7 +84,7 @@ a {
     max-height: auto;
     text-align: center;
   }
-  .sidebar img {
+  .sidebar #sidebar-img {
     max-height: 250px;
     max-width: 250px;
   }
