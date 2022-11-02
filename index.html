@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <!--This is to add a webpage tab icon/Favicon-->
     <link rel="icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/heart-icon.png">
     <!--This is the webpage tab title-->
     <title>Leslie Garcia</title>
@@ -18,15 +19,18 @@
             <ul>
                 <!--Each nav bar is listed individually below-->
                 <li><a href="#">Home</a></li>
+                <!--This button/section jump will only work on mobile sized screens where the sidebar is not visible-->
                 <li><a href="#hidden-about">About</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
                 <li><a href="#work">Work</a></li>
             </ul>
         </nav>
     </header>
-
+<!--This is your sidebar section for tablets, laptops and desktop screens-->
 <sidebar class="sidebar">
+    <!--This links the sidebar image and gives it an alt attribute for accesibility-->
     <img src="./assets/images/250x250.png" alt="250x250 gray filler image" id="sidebar-img">
+    <!--This is the sidebar header and about section-->
     <h2>About Me</h2>
     <P><b>She/her | 25 | Chicago</b>
     <br>I was born in Chicago but raised in South Carolina. I moved back
@@ -39,49 +43,84 @@
     so when Target offered the opportunity to learn, I just couldn't say 
     no!</P>
 </sidebar>
+<!--End of sidebar section-->
 
+
+<!--This is where the body of the webpage begins-->
 <container id="work" class="container">  
+    <!--Each coding subject is broken down into its own section. Background images linked through the CSS. The first section is HTML-->
     <section class="section" id="html">
+        <!--Header for each coding subject-->
         <h3 id="title">HTML</h3>
+        <!--Paragraph body for each coding subject-->
         <p id="desc">I have 10 years of basic HTML experience.<br>
         My first major project for it was my prework study guide for bootcamp.<br>
         <a href="https://lesliefg.github.io/prework-study-guide/" target="_blank" rel="noopener noreferrer">Live Page</a> | <a href="https://github.com/lesliefg/prework-study-guide" target="_blank" rel="noopener noreferrer"> Repo</a></p>
     </section>
+    <!--End of first section. Other sections follow same formatting-->
 
+    <!--CSS subject section-->
     <section class="section" id="css">
         <h3 id="title">CSS</h3>
         <p id="desc">I have 10 years of basic CSS experience. <br>
         My first major project for it was my CSS Cheat Sheet project for class.<br>
         <a href="https://lesliefg.github.io/challenge-2/" target="_blank" rel="noopener noreferrer">Live Page</a> | <a href="https://github.com/lesliefg/challenge-2" target="_blank" rel="noopener noreferrer">Repo</a></p>
     </section>
+    <!--End of CSS section-->
 
+    <!--Start of javascript section-->
     <section class="section" id="javascript">
         <h3 id="title" >Javascript</h3>
         <p id="desc">Experience to be added! :)</p>
     </section>
+    <!--End of javascript section-->
 
+    <!--Start of node section-->
     <section class="section" id="node">
         <h3 id="title">Node/loT</h3>
         <p id="desc">Experience to be added! :)</p>
     </section>
+    <!--End of node section-->
 
+    <!--Start of mern section-->
     <section class="section" id="mern">
         <h3 id="title">Mernstack</h3>
         <p id="desc">Experience to be added! :)</p>
     </section>
+    <!--End of mern section-->
+
+    <!--Paste here if you want more coding subject boxes-->
+
+    <!--This is the contact section-->
     <section class="section" id="contact-me">
+        <!--Header for the contact section-->
         <h3 id="contact-title">Contact Me</h3>
+        <!--Image source for the contact section picture-->
         <img src="./assets/images/Cat.jpg" id="contact-img" alt="orange tabby cat wearing a black and red plaid sweater">
+        <!--Pragraph body for the contact section-->
         <p id="contact"><b>Phone: </b>888.999.2233</br>
         <b>Email: </b> leslie.garcia2433@gmail.com</br>
         <b>Linkedin: </b><a href="https://www.linkedin.com/in/leslie-garcia-1251b410b/" target="_blank" rel="noopener noreferrer">Leslie Garcia</a></p>
     </section>
+    <!--End of contact section-->
 </container>
+<!--This is the end of the coding subjects, if you want to create more subjects copy the code below and paste it above the contact section
 
+    <section class="section" id="be sure to change this to the subject">
+        <h3 id="title">Subject Here</h3>
+        <p id="desc">Experience typed here</p>
+    </section>
+-->
+
+
+<!--This is the hidden about section. Only appears on mobile or smaller screens-->
 <hidden>
     <about id="hidden-about" class="about">
+        <!--Hidden about section title-->
         <h3 id="hidden-title">About Me</h3>
+        <!--Hidden about section image-->
         <img src="./assets/images/250x250.png" id="hidden-img" alt="orange tabby cat wearing a black and red plaid sweater">
+        <!--Hidden about section bio/description-->
         <p id="hidden-bio"><b>She/her | 25 | Chicago</b>
             <br>I was born in Chicago but raised in South Carolina. I moved back
             to Chicago when I was 19 after dropping out of college. I worked at Macy's for
@@ -94,12 +133,15 @@
             no!</P></p>
         </about>
 </hidden>
+<!--End of hidden section-->
 
+<!--This is our footer/credits-->
 <footer class="footer">
     <h4>Made with ❤️️ <!--blood sweat and tears included--> and CSS</h4>
     <p>
         &copy; Code by Leslie
     </p>
 </footer>
+<!--End of footer/credits-->
 </body>
 </html>
