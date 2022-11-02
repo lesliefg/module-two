@@ -36,4 +36,19 @@ Please refer to the LICENSE in the repo.
 - CSS comments in /*These Brackets*/ for easier understanding the styling sections
 
 ## Screenshots of finished and deployed webpage
-TBA
+Deployed desktop webpage 
+![alt text](/assets/screenshots/Desktop-1.png)
+![alt text](/assets/screenshots/Desktop-2.png)
+![alt text](/assets/screenshots/Desktop-3.png)
+- Hover effect active in final screenshot
+
+Deployed smaller screen webpage
+![alt text](/assets/screenshots/Smaller-1.png)
+![alt text](/assets/screenshots/Smaller-2.png)
+![alt text](/assets/screenshots/Smaller-3.png)
+
+Deployed mobile screen webpage
+![alt text](/assets/screenshots/Smallest-1.png)
+![alt text](/assets/screenshots/Smallest-2.png)
+![alt text](/assets/screenshots/Smallest-3.png)
+![alt text](/assets/screenshots/Smallest-4.png)
