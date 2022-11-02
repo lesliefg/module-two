@@ -1,4 +1,4 @@
-
+/*This is our root colors so if we change the color in the future it'll affect all elements with the root color*/
 :root {
     --background: #3A8999;
     --light: #C3EDE5;
@@ -6,12 +6,14 @@
     --dark: #46235c;
     --main-text: #000;
 }
+/*universal selectors*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*This is your body styling for font, color and background color*/
 body {
     font-size: 16px; 
     font-family: 'Cascadia Code';
@@ -19,6 +21,7 @@ body {
     background-color: #304153;
 }
 
+/* This is where your header styling begins*/
 .header {
     position: fixed;
     z-index: 1000;
@@ -30,13 +33,12 @@ body {
     color: var(--main-text);
     border-bottom: 3px solid var(--borders);
 }
-
-
+/*This is for the header/title, in this case 'Leslie Garcia'*/
 .header h1 {
     display: inline-block;
     font-size: 40px;
 }
-
+/*This is for the navigation links (Home, About, Contact Me, Work)*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -45,7 +47,7 @@ body {
     color: var(--main-text)
 }
 
-/*This gives the list in the navigation bar their style*/
+/*This gives the list/links in the navigation bar their style*/
 .header nav ul {
     list-style-type: none;
 }
@@ -56,18 +58,18 @@ body {
     margin-left: 25px;
     padding: 3px;
 }
-
+/*This removes the underlining from the nav links and gives it the text color*/
 a {
     color: var(--main-tex);
     text-decoration: none;
 }
-
+/*This is your nav link hover effect*/
 .header nav ul li a:hover {
     display: inline-block;
     background-color: var(--dark);
     color: var(--light);
 }
-
+/*This is where your sidebar styling begins*/
 .sidebar {
     height: 100%; 
     width: 400px; 
@@ -82,12 +84,12 @@ a {
     max-height: auto;
     text-align: center;
   }
-  
+  /*Sidebar header styling*/
 .sidebar h2 {
     font-size: 40px;
     color: var(--background);
 }
-
+/*Sidebar about styling, keeps it confined to a box so it's readable and scrollable*/
 .sidebar p {
     font-size: 16px;
     color: var(--light);
@@ -96,7 +98,7 @@ a {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+/*Container styling starts here. This places the entire section aka all the coding subjects*/
 .container {
     display: block;
     flex-wrap: wrap;
@@ -105,7 +107,7 @@ a {
     margin-top: 150px;
     margin-left: 390px;
 }
-
+/*This styles actual boxes for the subjects*/
 .container section {
     display: block;
     border: 5px solid var(--borders);
@@ -116,7 +118,7 @@ a {
     text-align: center;
     background-color: var(--light);
 }
-
+/*This is the title styling for the boxes*/
 #title {
     position: relative;
     top: -30px;
@@ -132,35 +134,22 @@ a {
     background-color: var(--dark);
     text-align: center;
 }
-
+/*This is the styling for the descriptions, also makes them invisible until you hover*/
 .section #desc {
     font-size: 20px;
     display: none;
 }
-
+/*This colors the links within the descriptions*/
 .section #desc a {
     color: #a149d8;
 }
-
+/*This activates the hover effect so the description will appear when you hover*/
 .section #desc a:hover {
-    color: #15a04a;
+    color: var(--dark);
+    background-color: var(--borders);
+    border: 3px solid var(--dark)
 }
-.section .section #title {
-border-radius: 8px;
-transition: all 0.5s ease-in-out;
-}
-
-.section:hover, .section:hover #title {
-    box-shadow: inset 0px 0px 8px
-    rgba(232, 102, 236, 1), 0 0 15px
-    rgba(232, 102, 236, 1);
-} 
-    
-.box ul:hover {
-    background: rgb(138, 196, 138);
-    transition: all 1s ease-in-out;
-}
-    
+/*This makes the description appear when you hover over an individual subject*/
 .section:hover #desc {
     display: block;
     text-align: center;
@@ -168,7 +157,18 @@ transition: all 0.5s ease-in-out;
     color: var(--dark);
     background-color: var(--light);
 }
-
+/*This is another hover effect, it makes the title and box itself glow when you hover*/
+.section .section #title {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+}
+/*More styling for when you hover*/
+.section:hover, .section:hover #title {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+} 
+/*Below gives each coding subject their unique background*/
 #html {
     background-image: url(./images/html.cropped.jpg);
 }
@@ -188,12 +188,18 @@ transition: all 0.5s ease-in-out;
 #mern {
     background-image: url(./images/mern.cropped.jpg);
 }
+/*End of background selections*/
 
-.section, .section #title {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
+/*This is the contact box styling*/
+#contact {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    left: auto;
 }
-
+/*Contact box title styling*/
 #contact-title {
     position: relative;
     top: -30px;
@@ -208,7 +214,7 @@ transition: all 0.5s ease-in-out;
     background-color: var(--dark);
     text-align: center;
 }
-
+/*Contact box image styling*/
 #contact-img {
     display: inline-block;
     border: 5px solid var(--borders);
@@ -219,15 +225,7 @@ transition: all 0.5s ease-in-out;
     left: auto;
 }
 
-#contact {
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: top;
-    position: relative;
-    left: auto;
-}
-
+/*This is where the hidden about box styling begins. Only visible on mobile device sizing*/
 #hidden-about {
     display: none;
     border: 5px solid var(--borders);
@@ -238,7 +236,7 @@ transition: all 0.5s ease-in-out;
     background-color: var(--light);
 }
 
-
+/*Hidden about box title styling*/
 #hidden-title {
     position: relative;
     top: -30px;
@@ -254,6 +252,7 @@ transition: all 0.5s ease-in-out;
     text-align: center;
 }
 
+/*Hidden about box image styling*/
 #hidden-img {
     display: inline-block;
     border: 5px solid var(--borders);
@@ -264,6 +263,7 @@ transition: all 0.5s ease-in-out;
     left: auto;
 }
 
+/*Hidden baout box bio/description styling*/
 #hidden-bio {
     display: inline-block;
     font-size: 20px;
@@ -273,6 +273,7 @@ transition: all 0.5s ease-in-out;
     padding: 10px;
 }
 
+/*This is the styling for the footer/credits*/
 footer {
     z-index: 1000;
     display: block;
@@ -286,22 +287,26 @@ footer {
     border-top: 3px solid var(--borders);
     position: relative;
 }
-
+/*Styling for the footer header*/
 footer h4 {
     font-size: 20px; 
 }
 
+/*This is where the break points are for different size screens*/
+/*Smaller sized desktops or devices*/
 @media screen and (max-width: 1280px) {
+/*This makes the header font slightly smaller*/
     .header h1 {
         font-size: 35px;
     }
     .header li {
         font-size: 20px;
     }
+/*This shifts the entire container section over a little as the sidebar gets smaller*/
     .container {
         margin-left: 450px;
     }
-
+/*This section restyles the sidebar as the screen gets smaller*/
     .sidebar {
         width: 450px;
     }
@@ -309,6 +314,12 @@ footer h4 {
     .sidebar h2 {
         font-size: 30px;
     }
+
+    .sidebar #sidebar-img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+    
     .sidebar p {
         font-size: 14px;
         max-height: 200px;
@@ -320,7 +331,9 @@ footer h4 {
     }
 }
 
+/*Small screen laptops*/
 @media screen and (max-width: 1079px) { 
+/*This makes the contact me card switch from inline to block so that the text appears below the picture instead of beside it*/
     .container section:nth-child(6) {
         height: auto;
     }
@@ -328,17 +341,18 @@ footer h4 {
 
 /*small screen laptops*/
 @media screen and (max-width: 980px) {
+/*This shifts the entire container section over a little as the sidebar gets smaller*/
     .container {
         margin-left: 300px;
+    }
+/*This section restyles the sidebar as the screen gets smaller*/
+    .sidebar {
+        width: 300px;
     }
 
     #sidebar-img {
         max-width: 200px;
         max-height: 200px;
-    }
-
-    .sidebar {
-        width: 300px;
     }
 
     .sidebar h2 {
@@ -356,10 +370,12 @@ footer h4 {
 
 /*Ipads and tablets*/
 @media screen and (max-width: 753px) {
+/*This makes the header centered and block instead of inline*/
     .header h1 {
         text-align: center;
         display: block;
     }
+/*This shifts the entire container section over a little as the sidebar gets smaller*/
     .container {
         margin-top: 200px;
         margin-left: 0px;
@@ -368,16 +384,19 @@ footer h4 {
     .container section {
         margin-left: 15px;
     }
+/*This section hides the sidebar on tablet/mobile devices*/
     .sidebar {
         display: none;
     }
-
+/*This makes the hidden about box appear on tablet/mobile devices*/
     #hidden-about {
         display: block;
         margin-left: 15px;
     }
 }
+/*Sizing between mobile and tablets*/
 @media screen and (max-width: 655px) {
+/*This makes the contact box shrink into a sqaure and makes the text disappear*/
     #contact {
     display: none;
     font-size: 20px;
@@ -386,7 +405,7 @@ footer h4 {
     bottom: 130px;
     left: auto;
     }   
-
+/*This makes the text appear with hover*/
     .section:hover #contact {
     display: block;
     text-align: center;
@@ -395,7 +414,7 @@ footer h4 {
     background-color: var(--light);
     border: 3px solid var(--borders);
     }
-
+/*The next few sections replace the coding subject background boxes to resize them for square boxes instead of rectangles*/
     #html {
         background-image: url(./images/html.square.jpg);
     }
@@ -419,11 +438,12 @@ footer h4 {
 
 /*Mobile devices*/
 @media screen and (max-width: 480px) {
+/*Shifts the coding subjects slightly*/
     .container section {
         margin-left: 15px;
         margin-right: 0px;
     }
-
+/*Shifts the hidden about slightly to match the container sections*/
     #hidden-about {
         margin-left: 15px;
     }
