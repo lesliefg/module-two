@@ -2,7 +2,7 @@
 
 ## Description
 
-A live portfolio website to display my work, experience and provide a way for future employers contact me.
+A live portfolio website to display my work, experience and provide a way for future employers to contact me.
 
 ## Installation
 
