@@ -27,7 +27,7 @@
         </nav>
     </header>
 <!--This is your sidebar section for tablets, laptops and desktop screens-->
-<sidebar class="sidebar">
+<aside class="sidebar">
     <!--This links the sidebar image and gives it an alt attribute for accesibility-->
     <img src="./assets/images/Sidebar.jpg" alt="Girl smiling at camera in selfie" id="sidebar-img">
     <!--This is the sidebar header and about section-->
@@ -42,12 +42,12 @@
     & learned the basics of HTML & CSS there. It was always an interest 
     so when Target offered the opportunity to learn, I just couldn't say 
     no!</P>
-</sidebar>
+</aside>
 <!--End of sidebar section-->
 
 
 <!--This is where the body of the webpage begins-->
-<container id="work" class="container">  
+<main id="work" class="container">  
     <!--Each coding subject is broken down into its own section. Background images linked through the CSS. The first section is HTML-->
     <section class="section" id="html">
         <!--Header for each coding subject-->
@@ -103,7 +103,7 @@
         <b>Linkedin: </b><a href="https://www.linkedin.com/in/leslie-garcia-1251b410b/" target="_blank" rel="noopener noreferrer">Leslie Garcia</a></p>
     </section>
     <!--End of contact section-->
-</container>
+</main>
 <!--This is the end of the coding subjects, if you want to create more subjects copy the code below and paste it above the contact section
 
     <section class="section" id="be sure to change this to the subject">
@@ -114,8 +114,8 @@
 
 
 <!--This is the hidden about section. Only appears on mobile or smaller screens-->
-<hidden>
-    <about id="hidden-about" class="about">
+<details>
+    <summary id="hidden-about" class="about">
         <!--Hidden about section title-->
         <h3 id="hidden-title">About Me</h3>
         <!--Hidden about section image-->
@@ -131,8 +131,8 @@
             & learned the basics of HTML & CSS there. It was always an interest 
             so when Target offered the opportunity to learn, I just couldn't say 
             no!</P></p>
-        </about>
-</hidden>
+        </summary>
+    </details>
 <!--End of hidden section-->
 
 <!--This is our footer/credits-->
