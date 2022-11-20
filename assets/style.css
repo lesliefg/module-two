@@ -112,7 +112,7 @@ a {
     margin-left: 390px;
 }
 /*This styles actual boxes for the subjects*/
-.container section {
+.section {
     display: block;
     border: 5px solid var(--borders);
     width: 90%;
@@ -139,8 +139,8 @@ a {
     text-align: center;
 }
 /*This is the styling for the descriptions, also makes them invisible until you hover*/
-.section #desc {
-    font-size: 20px;
+#desc {
+    font-size: 25px;
     display: none;
 }
 /*This colors the links within the descriptions*/
@@ -148,7 +148,7 @@ a {
     color: #a149d8;
 }
 /*This activates the hover effect so the description will appear when you hover*/
-.section #desc a:hover {
+#desc a:hover {
     color: var(--dark);
     background-color: var(--borders);
     border: 3px solid var(--dark)
@@ -157,12 +157,13 @@ a {
 .section:hover #desc {
     display: block;
     text-align: center;
+    margin-top: 75px;
     transition: all 2s ease-in-out;
     color: var(--dark);
-    background-color: var(--light);
+    background-color: var(--light) ;
 }
 /*This is another hover effect, it makes the title and box itself glow when you hover*/
-.section .section #title {
+.section, .section #title {
 border-radius: 8px;
 transition: all 0.5s ease-in-out;
 }
