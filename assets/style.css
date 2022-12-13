@@ -122,6 +122,10 @@ a {
     text-align: center;
     background-color: var(--light);
 }
+
+.one {
+    min-height: 500px;
+}
 /*This is the title styling for the boxes*/
 #title {
     position: relative;
@@ -190,7 +194,7 @@ transition: all 0.5s ease-in-out;
     background-image: url(./images/node.cropped.jpg);
 }
 
-#mern {
+#apis {
     background-image: url(./images/mern.cropped.jpg);
 }
 /*End of background selections*/
@@ -436,7 +440,7 @@ footer h4 {
         background-image: url(./images/node.square.jpg);
     }
     
-    #mern {
+    #apis {
         background-image: url(./images/mern.square.jpg);
     }
 }
