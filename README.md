@@ -6,13 +6,13 @@ A live portfolio website to display my work, experience and provide a way for fu
 
 ## Installation
 
-- No downloads necessary, follow link to open webpage and interact with live page [https://lesliefg.github.io/module-two/]
-- Or follow this link to repo to view code and comments [https://github.com/lesliefg/module-two]
+- No downloads necessary, follow link to open webpage and interact with live page [https://lesliefg.github.io/portfolio/]
+- Or follow this link to repo to view code and comments [https://github.com/lesliefg/portfolio]
 
 ## Usage
 
-- Live webpage link provided [https://lesliefg.github.io/module-two/]
-- Github repo link [https://github.com/lesliefg/module-two]
+- Live webpage link provided [https://lesliefg.github.io/portfolio/]
+- Github repo link [https://github.com/lesliefg/portfolio]
 
 - Use as a place to explore my past work with different functions as well as see any current projects I'm working on and future project ideas.
 - Use as a way to contact me for work, questions or anything else.
